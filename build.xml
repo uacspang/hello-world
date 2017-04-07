@@ -41,6 +41,8 @@
 
     <target name="main" depends="clean,run"/>
 
+    <target name="test" depends="clean,run"/>
+
 </project>
 
 
