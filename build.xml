@@ -15,8 +15,8 @@
         <javac includeAntRuntime="false" srcdir="${src.dir}" destdir="${classes.dir}"/>
     </target>
 
-    <!-- <target name="jar" depends="compile"> -->
-    <target name="jar">
+    <target name="jar" depends="compile">
+    <!-- <target name="jar"> -->
         <mkdir dir="${jar.dir}"/>
         <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
             <manifest>
